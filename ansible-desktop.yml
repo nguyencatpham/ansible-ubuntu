@@ -9,7 +9,6 @@
      - { role: zsh, become: true }
     # Server roles
      - { role: docker, become: true }
-     - { role: exim, become: true }
      - { role: gvm, become: true }
      - { role: nodejs, become: true }
      - { role: python, become: true }
@@ -20,10 +19,8 @@
      - { role: desktop-cleanup, become: true }
      - { role: desktop-autostart, become: true }
      - { role: desktop-preferences-unity }
-     - { role: adapta-theme, become: true }
      - { role: albert, become: true }
      - { role: altyo, become: true }
-     - { role: arc-theme, become: true }
      - { role: chromium, become: true }
      - { role: copyq, become: true }
      - { role: dbeaver, become: true }
@@ -36,13 +33,11 @@
      - { role: ksuperkey, become: true }
      - { role: libreoffice, become: true }
      - { role: maim, become: true }
-     - { role: min, become: true }
      - { role: nemo, become: true }
      - { role: notepadqq, become: true }
      - { role: notify-osd, become: true }
      - { role: remarkable, become: true }
      - { role: ripgrep, become: true }
-     - { role: rofi, become: true }
      - { role: shutter, become: true }
      - { role: sift, become: true }
      - { role: slop, become: true }
