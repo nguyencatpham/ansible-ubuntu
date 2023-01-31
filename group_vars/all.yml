@@ -2,8 +2,8 @@
 
 # http://docs.ansible.com/ansible/playbooks_variables.html#variable-precedence-where-should-i-put-a-variable
 aptcachetime: 3600
-locale: "fr_FR.UTF-8"
-timezone: "Europe/Paris"
+locale: "vi_VN.UTF-8"
+timezone: "asia/ho_chi_minh"
 chromium:
   set_default: true
   policy: false
@@ -16,16 +16,6 @@ desktop_autostart:
     - onboard-autostart.desktop
     - orca-autostart.desktop
     - vino-server.desktop
-php_phar_tools:
-  php_cs_fixer: true
-  phpcpd: true
-  sami: true
-  robo: true
-  phpmd: true
-  phpunit: true
-  codeception: true
-  cssprites: true
-  wpcli: true
 ssh:
   start: true
   service_enabled: true
