@@ -13,7 +13,7 @@ First, you need to install Git and Ansible :
 
 ```
 sudo apt-get install git
-git clone https://github.com/Benoth/ansible-ubuntu.git
+git clone https://github.com/nguyencatpham/ansible-ubuntu.git
 cd ansible-ubuntu
 ./install.sh
 ```
@@ -80,3 +80,4 @@ Run `ansible-playbook ansible-desktop.yml --ask-become-pass` and enter your sudo
 | eksctl                   | Install [EKSCTL](https://www.docker.com/)                                                                                                                                                                                                                                               |
 | Lens                   | Install [LENS](https://www.docker.com/)                                                                                                                                                                                                                                               |
 | Chrome                   | Install [Chrome](https://www.docker.com/)                                                                                                                                                                                                                                               |
+| yarn                   | Install [Yarn](https://www.docker.com/)                                                                                                                                                                                                                                               |
