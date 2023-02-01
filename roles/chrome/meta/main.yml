@@ -1,0 +1,32 @@
+---
+galaxy_info:
+  role_name: googlechrome
+  author: darkwizard242
+  description: Google Chrome stable version installation or uninstallation in Debian/EL based systems with amd64 architecture.
+  company: none
+  license: MIT
+  min_ansible_version: 2.4
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - jammy
+        - focal
+        - bionic
+    - name: Debian
+      versions:
+        - bullseye
+        - buster
+    - name: EL
+      versions:
+        - 8
+        - 7
+
+  galaxy_tags:
+    - googlechrome
+    - os
+    - system
+    - web
+    - browsers
+
+dependencies: []

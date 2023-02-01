@@ -1,0 +1,2 @@
+---
+eksctl_url: https://github.com/weaveworks/eksctl/releases/download/v{{ eksctl_version }}/eksctl_Linux_amd64.tar.gz  # yamllint disable-line rule:line-length

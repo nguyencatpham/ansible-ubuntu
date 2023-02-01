@@ -1,0 +1,50 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: fubarhouse
+  description: Installs Yarn JS package manager.
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.4
+  platforms:
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+        - buster
+    - name: EL
+      versions:
+        - 6
+        - 7
+    - name: Fedora
+      versions:
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+    - name: Ubuntu
+      versions:
+        - precise
+        - quantal
+        - raring
+        - saucy
+        - trusty
+        - utopic
+        - wily
+        - vivid
+        - xenial
+        - yakkety
+        - zesty
+        - artful
+        - bionic
+        - cosmic
+        - disco
+  galaxy_tags:
+    - javascript
+    - yarn
+    - package
+    - manager

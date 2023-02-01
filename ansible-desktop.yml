@@ -1,48 +1,56 @@
 ---
-
 - name: Ubuntu desktop environment playbook
   hosts: localhost
   roles:
-    # Common roles
-     - { role: locales, become: true }
-     - { role: common, become: true }
-     - { role: zsh, become: true }
-    # Server roles
-     - { role: docker, become: true }
-     - { role: gvm, become: true }
-     - { role: nodejs, become: true }
-     - { role: python, become: true }
-     - { role: rbenv, become: true }
-     - { role: ssh, become: true }
-    # # Desktop roles
-     - { role: desktop, become: true }
-     - { role: desktop-cleanup, become: true }
-     - { role: desktop-autostart, become: true }
-     - { role: desktop-preferences-unity }
-     - { role: albert, become: true }
-     - { role: altyo, become: true }
-     - { role: chromium, become: true }
-     - { role: copyq, become: true }
-     - { role: dbeaver, become: true }
-     - { role: filezilla, become: true }
-     - { role: firefox, become: true }
-     - { role: flatabulous, become: true }
-     - { role: gimp, become: true }
-     - { role: grub-customizer, become: true }
-     - { role: indicator-sysmonitor, become: true }
-     - { role: ksuperkey, become: true }
-     - { role: libreoffice, become: true }
-     - { role: maim, become: true }
-     - { role: nemo, become: true }
-     - { role: notepadqq, become: true }
-     - { role: notify-osd, become: true }
-     - { role: remarkable, become: true }
-     - { role: ripgrep, become: true }
-     - { role: shutter, become: true }
-     - { role: sift, become: true }
-     - { role: slop, become: true }
-     - { role: skype, become: true }
-     - { role: teamviewer, become: true }
-     - { role: ultra-flat-icons, become: true }
-     - { role: xmind, become: true }
-     - { role: slack, become: true }
+    # # Common roles
+    #  - { role: locales, become: true }
+    #  - { role: common, become: true }
+    #  - { role: zsh, become: true }
+    # # Server roles
+    #  - { role: docker, become: true }
+    #  - { role: gvm, become: true }
+    #  - { role: nodejs, become: true }
+    #  - { role: python, become: true }
+    #  - { role: rbenv, become: true }
+    #  - { role: ssh, become: true }
+    # # # Desktop roles
+    #  - { role: desktop, become: true }
+    #  - { role: desktop-cleanup, become: true }
+    #  - { role: desktop-autostart, become: true }
+    #  - { role: desktop-preferences-unity }
+    #  - { role: albert, become: true }
+    #  - { role: altyo, become: true }
+    #  - { role: chromium, become: true }
+    #  - { role: copyq, become: true }
+    #  - { role: dbeaver, become: true }
+    #  - { role: filezilla, become: true }
+    #  - { role: firefox, become: true }
+    #  - { role: flatabulous, become: true }
+    #  - { role: gimp, become: true }
+    #  - { role: grub-customizer, become: true }
+    #  - { role: indicator-sysmonitor, become: true }
+    #  - { role: ksuperkey, become: true }
+    #  - { role: libreoffice, become: true }
+    #  - { role: maim, become: true }
+    #  - { role: nemo, become: true }
+    #  - { role: notepadqq, become: true }
+    #  - { role: notify-osd, become: true }
+    #  - { role: remarkable, become: true }
+    #  - { role: ripgrep, become: true }
+    #  - { role: shutter, become: true }
+    #  - { role: sift, become: true }
+    #  - { role: slop, become: true }
+    #  - { role: skype, become: true }
+    #  - { role: teamviewer, become: true }
+    #  - { role: ultra-flat-icons, become: true }
+    #  - { role: xmind, become: true }
+    #  - { role: slack, become: true }
+    #  - { role: nvm, become: true }
+    #  - { role: vscode, become: true }
+    #  - { role: postman, become: true }
+    #  - { role: go, become: true }
+    # - { role: aws-cli, become: true }
+    # - { role: eksctl, become: true }
+    # - { role: kubectl, become: true }
+    # - { role: lens, become: true }
+    - { role: chrome, become: true }

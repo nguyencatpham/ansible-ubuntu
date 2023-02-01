@@ -1,0 +1,30 @@
+---
+
+- name: "Yarn | Uninstall globally installed packages"
+  command: "yarn global remove {{ item.name }}@{{ item.version | default('') }} --PREFIX={{ yarn_global_path }}"
+  failed_when: false
+  with_items:
+    - "{{ yarn_global_packages }}"
+  changed_when: false
+  when: yarn_clean_install
+
+- name: "Yarn | Get list of globally installed packages"
+  command: "yarn global list"
+  register: yarn_global_ls
+  failed_when: false
+  changed_when: false
+
+- name: "Yarn | Add globally installed packages"
+  command: "yarn global add {{ item.name }}@{{ item.version | default('') }} --PREFIX={{ yarn_global_path }}"
+  when:
+    - item.name + '@' + item.version not in yarn_global_ls.stdout
+  with_items:
+    - "{{ yarn_global_packages }}"
+
+- name: "Yarn | Upgrade installed packages"
+  command: "yarn global upgrade {{ item.name }} --PREFIX={{ yarn_global_path }}"
+  when:
+    - item.upgrade is defined
+    - item.upgrade
+  with_items:
+    - "{{ yarn_global_packages }}"

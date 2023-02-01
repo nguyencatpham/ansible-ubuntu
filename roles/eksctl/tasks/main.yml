@@ -1,0 +1,26 @@
+---
+- name: version
+  command: eksctl version
+  register: eksctl_installed_version
+  changed_when: false
+  failed_when: false
+
+- block:
+    - name: download
+      get_url:
+        url: "{{ eksctl_url }}"
+        dest: /tmp
+        checksum: "{{ eksctl_checksum }}"
+
+    - name: unarchive
+      unarchive:
+        src: /tmp/eksctl_Linux_amd64.tar.gz
+        dest: /usr/local/bin/
+        remote_src: true
+        owner: root
+        group: root
+        mode: '0755'
+      become: true
+  when: >
+    eksctl_installed_version.stdout is not defined
+    or eksctl_version not in eksctl_installed_version.stdout
