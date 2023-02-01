@@ -14,7 +14,7 @@
      - { role: python, become: true }
      - { role: rbenv, become: true }
      - { role: ssh, become: true }
-    # Desktop roles
+    # # Desktop roles
      - { role: desktop, become: true }
      - { role: desktop-cleanup, become: true }
      - { role: desktop-autostart, become: true }
@@ -45,3 +45,4 @@
      - { role: teamviewer, become: true }
      - { role: ultra-flat-icons, become: true }
      - { role: xmind, become: true }
+     - { role: slack, become: true }
